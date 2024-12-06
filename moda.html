@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Fashion Brands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            padding: 100px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+            animation: colorChange 10s infinite;
+        }
+        @keyframes colorChange {
+            0% { background: linear-gradient(135deg, #333, #555); }
+            25% { background: linear-gradient(135deg, #444, #666); }
+            50% { background: linear-gradient(135deg, #555, #777); }
+            75% { background: linear-gradient(135deg, #444, #666); }
+            100% { background: linear-gradient(135deg, #333, #555); }
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: -50px auto 0;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #bbb;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            width: 70px;
+            height: 5px;
+            background: #666;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+
+        /* Brand Cards */
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .brand-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #111;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .brand-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        .brand-card .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .brand-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #bbb;
+        }
+        .brand-card p {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .brand-card a {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #444, #666);
+            color: #fff;
+            font-weight: 500;
+            border-radius: 30px;
+            transition: background 0.3s;
+        }
+        .brand-card a:hover {
+            background: linear-gradient(135deg, #666, #444);
+        }
+        /* Sparks */
+        .spark {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(circle, #fff 0%, rgba(255, 255, 255, 0) 70%);
+            pointer-events: none;
+            border-radius: 50%;
+            animation: sparkFade 0.5s ease-out forwards;
+        }
+        @keyframes sparkFade {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(3);
+            }
+        }
+        /* Footer */
+        footer {
+            background: #111;
+            color: #bbb;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .back-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #444, #666);
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-decorati on: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+         background: linear-gradient(135deg, #666, #444);
+        transform: scale(1.1);
+        }
+        .back-buttons {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #444, #666);
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-decorati on: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+         background: linear-gradient(135deg, #666, #444);
+        transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Lobby.html" class="back-buttons">Regresar</a>
+        <h1>Descubre las mejores marcas de moda</h1>
+        <p>Recomendaciones seleccionadas para cada estilo y ocasión.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+     </header>
+
+    <main>
+        <!-- Casual Brands Section -->
+        <section>
+            <a href="joyas.html" class="back-button">Joyas</a>
+            <h2 class="section-title">Ropa Casual</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/zara.gif" alt="Zara">
+                    <div class="content">
+                        <h3>Zara</h3>
+                        <p>Ropa elegante y asequible para la moda diaria.</p>
+                        <a href="https://www.zara.com" target="_blank">Visita Zara</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/h&m.gif" alt="H&M">
+                    <div class="content">
+                        <h3>H&M</h3>
+                        <p>Estilos modernos y versátiles a excelentes precios.</p>
+                        <a href="https://www.hm.com" target="_blank">Visita H&M</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sportswear Brands Section -->
+        <section>
+            <h2 class="section-title">Ropa De Deporte</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/nike.webp" alt="Nike">
+                    <div class="content">
+                        <h3>Nike</h3>
+                        <p>Diseños innovadores para máximo rendimiento y estilo.</p>
+                        <a href="https://www.nike.com" target="_blank">Visita Nike</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/adidas.gif" alt="Adidas">
+                    <div class="content">
+                        <h3>Adidas</h3>
+                        <p>El equilibrio perfecto entre comodidad y tecnología.</p>
+                        <a href="https://www.adidas.com" target="_blank">Visita Adidas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luxury Brands Section -->
+        <section>
+            <h2 class="section-title">Marcas De Lujo</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/gucci.gif" alt="Gucci">
+                    <div class="content">
+                        <h3>Gucci</h3>
+                        <p>Lujo atemporal con un toque de sofisticación moderna.</p>
+                        <a href="https://www.gucci.com" target="_blank">Visita Gucci</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/chanel.gif" alt="Chanel">
+                    <div class="content">
+                        <h3>Chanel</h3>
+                        <p>Elegancia clásica que nunca pasa de moda..</p>
+                        <a href="https://www.chanel.com" target="_blank">Visita Chanel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UTEZ. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Add sparks effect
+        document.addEventListener('mousemove', function(e) {
+            const spark = document.createElement('div');
+            spark.className = 'spark';
+            spark.style.left = `${e.pageX}px`;
+            spark.style.top = `${e.pageY}px`;
+            document.body.appendChild(spark);
+
+            setTimeout(() => {
+                spark.remove();
+            }, 500); // Remove spark after animation
+        });
+    </script>
+</body>
+</html>
+

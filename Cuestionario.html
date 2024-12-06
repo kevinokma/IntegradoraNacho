@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué planta de PvZ eres?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-image: url("imagenes/PvZ-Heroes.jpg"); /* Ruta de la imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+      background-position: center; /* Centra la imagen */
+      text-align: center;
+    }
+    header {
+      background-color: rgba(42, 157, 143, 0.8); /* Fondo semitransparente */
+      color: white;
+      padding: 20px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    header h1 {
+      margin: 0;
+    }
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    select, input[type="text"], input[type="number"], input[type="submit"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #2a9d8f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #21867a;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>¿Qué planta de PvZ eres?</h1>
+  <p>¡Descubre cuál es tu planta ideal respondiendo este divertido cuestionario!</p>
+</header>
+
+<main>
+  <form>
+    <!-- Pregunta 1: Color favorito -->
+    <label for="color-favorito">¿Cuál es tu color favorito?</label>
+    <select id="color-favorito" name="color-favorito" required>
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="verde">Verde</option>
+      <option value="amarillo">Amarillo</option>
+      <option value="rojo">Rojo</option>
+      <option value="azul">Azul</option>
+    </select>
+
+    <!-- Pregunta 2: Mes favorito -->
+    <label for="mes-favorito">¿Cuál es tu mes favorito?</label>
+    <select id="mes-favorito" name="mes-favorito" required>
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="enero">Enero</option>
+      <option value="julio">Julio</option>
+      <option value="octubre">Octubre</option>
+      <option value="diciembre">Diciembre</option>
+    </select>
+
+    <!-- Tarjeta de crédito (solo visual) -->
+    <label for="tarjeta">Ingresa los datos de tu tarjeta de credito:</label>
+    <input type="text" id="tarjeta" name="tarjeta" placeholder="Número de tarjeta" maxlength="16">
+    <input type="text" name="nombre" placeholder="Nombre del titular">
+    <input type="number" name="mes-exp" placeholder="Mes de expiración (MM)" min="1" max="12">
+    <input type="number" name="año-exp" placeholder="Año de expiración (YYYY)" min="2023">
+    <input type="text" name="cvv" placeholder="CVV" maxlength="3">
+
+    <!-- Botón de enviar -->
+    <input type="submit" value="¡Descubre tu planta!">
+  </form>
+</main>
+</body>
+</html>

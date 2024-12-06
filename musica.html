@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Música semanal - Vlog Entretenimiento</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-wrapper text-center">
+        <div class="container">
+            <h1>Recomendaciones de Música</h1>
+            <p>Explora más de la música vibrante</p>
+            <a href="Lobby.html" class="btn btn-dark mt-3">Volver al Vlog</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <!-- Botón agregado -->
+        <div class="text-center mb-4">
+            <p class="likes-counter">Total de Me Gusta: <span id="likeCount">0</span></p>
+        </div>
+        <!-- Fin del botón -->
+        <h2 class="text-center mb-4">Álbumes recomendados</h2>
+        <div class="row g-4">
+            <!-- Tarjeta Álbum 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/scarlet_doja.jpg" class="card-img-top" alt="Álbum 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Scarlet</h5>
+                        <p class="card-text">Un álbum pop que redefine el género con letras profundas.</p>
+                        <button class="btn btn-primary" onclick="incrementLike('Álbum 1')">Me Gusta</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Álbum 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/bodywar_rock.jpg" class="card-img-top" alt="Álbum 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Body War</h5>
+                        <p class="card-text">Un homenaje al rock clásico con un toque moderno.</p>
+                        <button class="btn btn-primary" onclick="likeReview('Álbum 2')">Me Gusta</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Álbum 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/amordecalavera_thr.jpg" class="card-img-top" alt="Álbum 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Amor De Calavera</h5>
+                        <p class="card-text">Sonidos sampleados y lírica que relata historia pura.</p>
+                        <button class="btn btn-primary" onclick="likeReview('Álbum 3')">Me Gusta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón a la trivia -->
+        <div class="text-center mt-5">
+            <p class="fw-bold">¿Quieres saber cuánto sabes sobre estos álbumes?</p>
+            <a href="trivia.html" class="btn btn-warning btn-lg">¡Haz clic aquí para probar tu conocimiento!</a>
+        </div>
+
+        <section class="my-5">
+            <h3>¿Cómo las recomendaciones de música influyen en nuestros gustos?</h3>
+            <p>En la era digital, las recomendaciones de música tienen un papel fundamental en la manera en que descubrimos nuevas canciones, géneros y artistas. Las plataformas como Spotify, YouTube y Apple Music utilizan algoritmos que analizan nuestros hábitos de escucha para sugerirnos contenido que se alinea con nuestros gustos previos. Sin embargo, este fenómeno no solo se limita a la repetición de lo conocido; las recomendaciones también pueden abrirnos las puertas a nuevos géneros y artistas que quizás no habríamos explorado por nuestra cuenta.</p>
+            <p>Al darnos acceso a canciones de artistas de diferentes partes del mundo y de estilos variados, las recomendaciones amplían nuestro horizonte musical. Nos permiten conectar con sonidos que antes nos habrían parecido ajenos, ayudándonos a diversificar nuestra colección musical y a disfrutar de experiencias auditivas frescas.</p>
+            <p>Para aquellos interesados en ampliar sus gustos musicales, la clave está en ser receptivos a nuevas sugerencias y en explorar activamente las recomendaciones que nos presentan. La próxima vez que una plataforma te sugiera una canción fuera de lo común, dale una oportunidad. Quizás descubras un género completamente nuevo que te entusiasme.</p>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 mt-5" style="background-color: #000000;">
+        <p>Vlog de Entretenimiento © 2024</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

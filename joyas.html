@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Jewelry Brands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            padding: 100px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+            animation: colorChange 10s infinite;
+        }
+        @keyframes colorChange {
+            0% { background: linear-gradient(135deg, #333, #555); }
+            25% { background: linear-gradient(135deg, #444, #666); }
+            50% { background: linear-gradient(135deg, #555, #777); }
+            75% { background: linear-gradient(135deg, #444, #666); }
+            100% { background: linear-gradient(135deg, #333, #555); }
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: -50px auto 0;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #bbb;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            width: 70px;
+            height: 5px;
+            background: #666;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+
+        /* Brand Cards */
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .brand-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #111;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .brand-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        .brand-card .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .brand-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #bbb;
+        }
+        .brand-card p {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .brand-card a {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #444, #666);
+            color: #fff;
+            font-weight: 500;
+            border-radius: 30px;
+            transition: background 0.3s;
+        }
+        .brand-card a:hover {
+            background: linear-gradient(135deg, #666, #444);
+        }
+        /* Sparks */
+        .spark {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(circle, #fff 0%, rgba(255, 255, 255, 0) 70%);
+            pointer-events: none;
+            border-radius: 50%;
+            animation: sparkFade 0.5s ease-out forwards;
+        }
+        @keyframes sparkFade {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(3);
+            }
+        }
+        /* Footer */
+        footer {
+            background: #111;
+            color: #bbb;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+       .back-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #444, #666);
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-decorati on: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+         background: linear-gradient(135deg, #666, #444);
+        transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="moda.html" class="back-button">Regresar</a>
+        <h1>Explora las mejores marcas de joyas</h1>
+        <p>Seleccionadas para complementar tu estilo y destacar en cada ocasión.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </header>
+    <main>
+        <!-- Everyday Jewelry Section -->
+        <section>
+            <h2 class="section-title">Joyas Para El Día a Día</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/pandora.gif" alt="Pandora">
+                    <div class="content">
+                        <h3>Pandora</h3>
+                        <p>Pulseras y charms únicos para tus momentos especiales.</p>
+                        <a href="https://www.pandora.net" target="_blank">Visita Pandora</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/swarovski.gif" alt="Swarovski">
+                    <div class="content">
+                        <h3>Swarovski</h3>
+                        <p>Elegantes piezas con cristales deslumbrantes.</p>
+                        <a href="https://www.swarovski.com" target="_blank">Visita Swarovski</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Luxury Jewelry Section -->
+        <section>
+            <h2 class="section-title">Joyas De Lujo</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/cartier.gif" alt="Cartier">
+                    <div class="content">
+                        <h3>Cartier</h3>
+                        <p>La excelencia en diseño y sofisticación.</p>
+                        <a href="https://www.cartier.com" target="_blank">Visita Cartier</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/tiffany.gif" alt="Tiffany & Co.">
+                    <div class="content">
+                        <h3>Tiffany & Co.</h3>
+                        <p>Un símbolo de lujo y elegancia desde 1837.</p>
+                        <a href="https://www.tiffany.com" target="_blank">Visita Tiffany & Co.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- High-End Jewelry Section -->
+        <section>
+            <h2 class="section-title">Joyas De Alta Gama</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="imagenes/bvlgary.gif" alt="Bvlgari">
+                    <div class="content">
+                        <h3>Bvlgari</h3>
+                        <p>Diseños audaces y refinados con esencia italiana.</p>
+                        <a href="https://www.bulgari.com" target="_blank">Visita Bvlgari</a>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <img src="imagenes/piaget.gif" alt="Piaget">
+                    <div class="content">
+                        <h3>Piaget</h3>
+                        <p>Joyas exclusivas que combinan arte y maestría relojera.</p>
+                        <a href="https://www.piaget.com" target="_blank">Visita Piaget</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 UTEZ. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Add sparks effect
+        document.addEventListener('mousemove', function(e) {
+            const spark = document.createElement('div');
+            spark.className = 'spark';
+            spark.style.left = `${e.pageX}px`;
+            spark.style.top = `${e.pageY}px`;
+            document.body.appendChild(spark);
+
+            setTimeout(() => {
+                spark.remove();
+            }, 500); // Remove spark after animation
+        });
+    </script>
+</body>
+</html>

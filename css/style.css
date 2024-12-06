@@ -1,0 +1,29 @@
+body {
+    background-image: url('../imagenes/fondo2.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff;
+}
+/*.header-wrapper {
+    background: linear-gradient(90deg, #1DB954, #191414);
+    color: white;
+    padding: 20px 0;
+}*/
+.card {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card .btn-primary {
+    background-color: #1DB954;
+    border: none;
+}
+.card .btn-primary:hover {
+    background-color: #148a3a;
+}
+footer {
+    color: rgb(255, 255, 255);
+}

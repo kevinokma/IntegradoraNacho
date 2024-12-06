@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Musical - Vlog de Entretenimiento</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-wrapper text-center">
+        <div class="container">
+            <h1>Trivia Musical</h1>
+            <p>¿Cuánto sabes sobre los álbumes destacados?</p>
+            <a href="musica.html" class="btn btn-dark mt-3">Volver a Recomendaciones</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Preguntas de Trivia</h2>
+        <form id="triviaForm">
+            <!-- Pregunta 1 -->
+            <div class="mb-4">
+                <h5>1. ¿Quién es el artista del álbum *Scarlet*?</h5>
+                <div>
+                    <input type="radio" id="q1a" name="q1" value="correct">
+                    <label for="q1a">Doja Cat</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1b" name="q1" value="wrong">
+                    <label for="q1b">Ariana Grande</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1c" name="q1" value="wrong">
+                    <label for="q1c">Nicki Minaj</label>
+                </div>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="mb-4">
+                <h5>2. ¿Qué género se asocia más con el álbum *Body War*?</h5>
+                <div>
+                    <input type="radio" id="q2a" name="q2" value="wrong">
+                    <label for="q2a">Pop</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2b" name="q2" value="correct">
+                    <label for="q2b">Rock</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2c" name="q2" value="wrong">
+                    <label for="q2c">Hip-Hop</label>
+                </div>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="mb-4">
+                <h5>3. ¿Cómo se titula el álbum que contiene sampleos y lírica narrativa?</h5>
+                <div>
+                    <input type="radio" id="q3a" name="q3" value="wrong">
+                    <label for="q3a">Scarlet</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3b" name="q3" value="wrong">
+                    <label for="q3b">Body War</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3c" name="q3" value="correct">
+                    <label for="q3c">Amor de Calavera</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success" onclick="evaluateTrivia()">Enviar Respuestas</button>
+        </form>
+
+        <div id="result" class="text-center mt-4"></div>
+    </main>
+
+    <footer class="text-center py-3 mt-5" style="background-color: #000000;">
+        <p>Vlog de Entretenimiento © 2024</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/main2.js"></script>
+</body>
+</html>
